@@ -1,38 +1,36 @@
-(function() {
+(function () {
   // get all data in form and return object
   function getFormData(form) {
-    var elements = form.elements;
-    var honeypot;
+    const { elements } = form;
+    let honeypot;
 
-    var fields = Object.keys(elements).filter(function(k) {
-      if (elements[k].name === "honeypot") {
+    const fields = Object.keys(elements).filter((k) => {
+      if (elements[k].name === 'honeypot') {
         honeypot = elements[k].value;
         return false;
       }
       return true;
-    }).map(function(k) {
-      if(elements[k].name !== undefined) {
+    }).map((k) => {
+      if (elements[k].name !== undefined) {
         return elements[k].name;
       // special case for Edge's html collection
-      }else if(elements[k].length > 0){
+      } if (elements[k].length > 0) {
         return elements[k].item(0).name;
       }
-    }).filter(function(item, pos, self) {
-      return self.indexOf(item) == pos && item;
-    });
+    }).filter((item, pos, self) => self.indexOf(item) == pos && item);
 
-    var formData = {};
-    fields.forEach(function(name){
-      var element = elements[name];
+    const formData = {};
+    fields.forEach((name) => {
+      const element = elements[name];
 
       // singular form elements just have one value
       formData[name] = element.value;
 
       // when our element has multiple items, get their values
       if (element.length) {
-        var data = [];
-        for (var i = 0; i < element.length; i++) {
-          var item = element.item(i);
+        const data = [];
+        for (let i = 0; i < element.length; i++) {
+          const item = element.item(i);
           if (item.checked || item.selected) {
             data.push(item.value);
           }
@@ -43,18 +41,17 @@
 
     // add form-specific values into the data
     formData.formDataNameOrder = JSON.stringify(fields);
-    formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
-    formData.formGoogleSendEmail
-      = form.dataset.email || ""; // no email by default
+    formData.formGoogleSheetName = form.dataset.sheet || 'responses'; // default sheet name
+    formData.formGoogleSendEmail = form.dataset.email || ''; // no email by default
 
-    return {data: formData, honeypot: honeypot};
+    return { data: formData, honeypot };
   }
 
-  function handleFormSubmit(event) {  // handles form submit without any jquery
-    event.preventDefault();           // we are submitting via xhr below
-    var form = event.target;
-    var formData = getFormData(form);
-    var data = formData.data;
+  function handleFormSubmit(event) { // handles form submit without any jquery
+    event.preventDefault(); // we are submitting via xhr below
+    const form = event.target;
+    const formData = getFormData(form);
+    const { data } = formData;
 
     // If a honeypot field is filled, assume it was done so by a spam bot.
     if (formData.honeypot) {
@@ -62,44 +59,42 @@
     }
 
     disableAllButtons(form);
-    var url = form.action;
-    var xhr = new XMLHttpRequest();
+    const url = form.action;
+    const xhr = new XMLHttpRequest();
     xhr.open('POST', url);
     // xhr.withCredentials = true;
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-          form.reset();
-          var formElements = form.querySelector(".form-elements")
-          if (formElements) {
-            formElements.style.display = "none"; // hide form
-          }
-          var thankYouMessage = form.querySelector(".thankyou_message");
-          if (thankYouMessage) {
-            thankYouMessage.style.display = "block";
-          }
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        form.reset();
+        const formElements = form.querySelector('.form-elements');
+        if (formElements) {
+          formElements.style.display = 'none'; // hide form
         }
+        const thankYouMessage = form.querySelector('.thankyou_message');
+        if (thankYouMessage) {
+          thankYouMessage.style.display = 'block';
+        }
+      }
     };
     // url encode form data for sending as post data
-    var encoded = Object.keys(data).map(function(k) {
-        return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
-    }).join('&');
+    const encoded = Object.keys(data).map((k) => `${encodeURIComponent(k)}=${encodeURIComponent(data[k])}`).join('&');
     xhr.send(encoded);
   }
 
   function loaded() {
     // bind to the submit event of our form
-    var forms = document.querySelectorAll("form.gform");
-    for (var i = 0; i < forms.length; i++) {
-      forms[i].addEventListener("submit", handleFormSubmit, false);
+    const forms = document.querySelectorAll('form.gform');
+    for (let i = 0; i < forms.length; i++) {
+      forms[i].addEventListener('submit', handleFormSubmit, false);
     }
-  };
-  document.addEventListener("DOMContentLoaded", loaded, false);
+  }
+  document.addEventListener('DOMContentLoaded', loaded, false);
 
   function disableAllButtons(form) {
-    var buttons = form.querySelectorAll("button");
-    for (var i = 0; i < buttons.length; i++) {
+    const buttons = form.querySelectorAll('button');
+    for (let i = 0; i < buttons.length; i++) {
       buttons[i].disabled = true;
     }
   }
-})();
+}());

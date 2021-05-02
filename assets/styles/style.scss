@@ -1,22 +1,20 @@
 @import 'reset';
-$main-color: #6070FF;
-$main-title-text-color: #172B4D;
+$main-color: #6070ff;
+$main-title-text-color: #172b4d;
 $description-text-color: #344563;
-$social-links-bg-color: #505F79;
-$lets-connect-text-color: #7F8CFF;
+$social-links-bg-color: #505f79;
+$lets-connect-text-color: #7f8cff;
 
 body {
   background-color: #f7f7f9;
 
   header {
-    /* header-background-mobile */
     border-radius: 0 0 0 30% / 0 0 0 15%;
     width: 100%;
     height: 90vh;
     left: 0;
     top: 0;
-    /* Neutrals/N0 */
-    background: #FFFFFF;
+    background: #fff;
 
     .navbar-wrapper {
       .collapse {
@@ -29,7 +27,6 @@ body {
         text-decoration: none;
         color: white;
         font-family: 'Poppins', sans-serif;
-        color: $main-title-text-color;
         font-weight: 600;
         font-size: 2.6rem;
         line-height: 3.4rem;
@@ -95,7 +92,7 @@ body {
       height: 32vh;
       margin-top: 5%;
       border-radius: 8px;
-      background-color: rgb(249,177,117);
+      background-color: rgb(249, 177, 117);
       margin-left: auto;
       margin-right: auto;
       display: flex;
@@ -119,7 +116,7 @@ body {
       }
 
       .fa-circle {
-        color: #C1C7D0;
+        color: #c1c7d0;
         font-size: 0.6rem;
       }
     }
@@ -142,8 +139,7 @@ body {
     height: 90vh;
     left: 0;
     top: 0;
-    /* Neutrals/N0 */
-    background: #FFFFFF;
+    background: #fff;
 
     .get-resume-btn {
       width: 50%;
@@ -156,67 +152,69 @@ body {
       letter-spacing: 6%;
     }
 
-.accordion-button {
-  font-family: 'Poppins', sans-serif;
-  color: black;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 1.3rem;
-  line-height: 1.8rem;
-  letter-spacing: 6%;
-}
+    .accordion-button {
+      font-family: 'Poppins', sans-serif;
+      color: black;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+      letter-spacing: 6%;
+    }
 
-.accordion-body-item {
-  background-color: #F7F7F9;
-  line-height: 1.8rem;
-  margin-bottom: 3%;
-}
-.accordion-body-item-text {
-  font-family: 'Poppins', sans-serif;
-  color: black;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 1.1rem;
-  line-height: 1.3rem;
-  letter-spacing: 6%;
-}
+    .accordion-body-item {
+      background-color: #f7f7f9;
+      line-height: 1.8rem;
+      margin-bottom: 3%;
+    }
+
+    .accordion-body-item-text {
+      font-family: 'Poppins', sans-serif;
+      color: black;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 1.1rem;
+      line-height: 1.3rem;
+      letter-spacing: 6%;
+    }
 
     .rounded-circle {
       width: 60%;
     }
 
-.contact-me {
-  /* header-background-mobile */
-  border-radius: 20% 0 0 0 / 10% 0 0 0;
-  width: 100%;
-  height: 90vh;
-  left: 0;
-  top: 0;
-  /* Neutrals/N0 */
-  background: #6070FF;
-}
+    .contact-me {
+      /* header-background-mobile */
+      border-radius: 20% 0 0 0 / 10% 0 0 0;
+      width: 100%;
+      height: 90vh;
+      left: 0;
+      top: 0;
+      background: #6070ff;
+    }
 
-.mail-form {
-  border-radius: 8px;
-  font-family: 'Poppins', sans-serif;
-  color: #172B4D;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.2rem;
-  line-height: 2rem;
-  text-indent: 3%;
-}
+    .mail-form {
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+      color: #172b4d;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.2rem;
+      line-height: 2rem;
+      text-indent: 3%;
+    }
 
-.get-intouch-btn {
-  border-radius: 8px;
-  border-radius: 8px;
-  font-family: 'Poppins', sans-serif;
-  color: #172B4D;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-}
+    .get-intouch-btn {
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+      color: #172b4d;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
 
+    .thankyou_message {
+      display: none;
+    }
   }
 }
