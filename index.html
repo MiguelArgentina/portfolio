@@ -25,29 +25,49 @@
 
 <body>
   <header>
-    <div class="navbar-wrapper">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-          <div class="container">
-              <img class="brand-logo" src="assets/images/logo.png" alt="Brand Logo">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto ms-3">
-                      <li class="nav-item">
-                          <a class="nav-link text-white mt-5" href="#portfolio">Portfolio</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link text-white my-3" href="#about">About</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link text-white mb-3" href="#contact">Contact</a>
-                      </li>
-                  </ul>
-              </div>
+    <div class="navbar-wrapper d-xl-none">
+      <nav class="navbar navbar-expand-xl navbar-light bg-white">
+        <div class="container">
+          <img class="brand-logo" src="assets/images/logo.png" alt="Brand Logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto ms-3">
+              <li class="nav-item">
+                <a class="nav-link text-white mt-5" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white my-3" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white mb-3" href="#contact">Contact</a>
+              </li>
+            </ul>
           </div>
+        </div>
       </nav>
     </div>
+
+    <nav class="navbar d-none d-xl-flex navbar-light bg-light">
+
+      <div class="col-12 d-xl-flex bg-white justify-content-between align-items-top mt-2">
+        <a class="navbar-brand ms-5" href="#">
+          <img src="assets/images/logo.png" alt="Brand Logo" class="d-inline-block align-text-top">
+        </a>
+        <div class="navbar-links-wrapper d-flex align-items-top mt-3 me-5">
+
+          <a class="navbar-link" href="#portfolio">Portfolio</a>
+
+          <a class="navbar-link mx-5" href="#about">About</a>
+
+          <a class="navbar-link " href="#contact">Contact</a>
+
+        </div>
+
+      </div>
+    </nav>
+
     <div class="container">
       <div class="row mx-1">
         <div class="welcome-text-column col-12 mt-4">
@@ -79,13 +99,13 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="card mx-auto w-90">
+          <div class="card mx-auto flex-xl-row w-90">
             <div class="image-container">
               <img src="assets/images/code.jpg" class="card-img-top" alt="...">
             </div>
             <div class="card-body">
               <h5 class="card-title my-2">Tonic</h5>
-              <div class="subtitle-tags-container mb-3">
+              <div class="subtitle-tags-container mb-3 mt-xl-3">
                 <span><strong class="text-dark">Canopy</strong></span>
                 <i class="fas fa-circle mx-2"></i>
                 <span class="text-muted">Back End Dev</span>
@@ -102,13 +122,59 @@
             </div>
           </div>
           <br>
-          <div class="card mx-auto w-90">
+          <div class="card mx-auto flex-xl-row-reverse w-90">
             <div class="image-container">
               <img src="assets/images/code.jpg" class="card-img-top" alt="...">
             </div>
             <div class="card-body">
               <h5 class="card-title my-2">Tonic</h5>
-              <div class="subtitle-tags-container mb-3">
+              <div class="subtitle-tags-container mb-3 mt-xl-3">
+                <span><strong class="text-dark">Canopy</strong></span>
+                <i class="fas fa-circle mx-2"></i>
+                <span class="text-muted">Back End Dev</span>
+                <i class="fas fa-circle mx-2"></i>
+                <span class="text-muted">2015</span>
+              </div>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="badges-container mt-3">
+                <span class="badge">html</span>
+                <span class="badge mx-1">css</span>
+                <span class="badge">javascript</span>
+              </div>
+              <a href="#" class="see-project-btn mt-4 btn btn-clipboard border border-primary text-primary">See project</a>
+            </div>
+          </div>
+          <br>
+          <div class="card mx-auto flex-xl-row w-90">
+            <div class="image-container">
+              <img src="assets/images/code.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title my-2">Tonic</h5>
+              <div class="subtitle-tags-container mb-3 mt-xl-3">
+                <span><strong class="text-dark">Canopy</strong></span>
+                <i class="fas fa-circle mx-2"></i>
+                <span class="text-muted">Back End Dev</span>
+                <i class="fas fa-circle mx-2"></i>
+                <span class="text-muted">2015</span>
+              </div>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="badges-container mt-3">
+                <span class="badge">html</span>
+                <span class="badge mx-1">css</span>
+                <span class="badge">javascript</span>
+              </div>
+              <a href="#" class="see-project-btn mt-4 btn btn-clipboard border border-primary text-primary">See project</a>
+            </div>
+          </div>
+          <br>
+          <div class="card mx-auto flex-xl-row-reverse w-90">
+            <div class="image-container">
+              <img src="assets/images/code.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title my-2">Tonic</h5>
+              <div class="subtitle-tags-container mb-3 mt-xl-3">
                 <span><strong class="text-dark">Canopy</strong></span>
                 <i class="fas fa-circle mx-2"></i>
                 <span class="text-muted">Back End Dev</span>
@@ -133,30 +199,33 @@
   </section>
 
   <footer>
-    <section id="about" class="about-container">
+    <section id="about" class="about-container py-xl-5">
       <div class="container">
         <div class="row mx-1">
-          <div class="welcome-text-column col-12 mt-4">
-            <h1>About Myself</h1>
-          </div>
-          <div class="my-description-column col-12 mt-3">
-            <p class="">
-              I’m a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
-            </p>
-          </div>
-          <div class="social-media-column col-12 mt-3">
-            <div class="social-media-title mb-3">
-              Let's connect
+          <div class="about-details col-xl-6">
+            <div class="welcome-text-column-footer col-12 mt-4 mt-xl-0">
+              <h1>About Myself</h1>
             </div>
-            <div class="social-media-links-wrapper">
-              <a href="https://twitter.com/Qete_arg" rel="noreferrer noopener" target="_blank"><i class="social-media-link fab fa-twitter-square"></i></a>
-              <a href="https://www.linkedin.com/in/miguelricardogomez/" rel="noreferrer noopener" target="_blank"><i class="social-media-link fab fa-linkedin"></i></a>
-              <a href="https://github.com/MiguelArgentina" rel="noreferrer noopener" target="_blank"><i class="social-media-link fab fa-github-square"></i></a>
-              <a href="https://t.me/TucuGomez" rel="noreferrer noopener" target="_blank"><i class="social-media-link fab fa-telegram"></i></a>
+            <div class="my-description-column col-12 mt-3">
+              <p class="">
+                I’m a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
+              </p>
             </div>
-            <a href="#" class="get-resume-btn mt-4 btn btn-clipboard border border-primary text-primary">Get my resume</a>
+            <div class="social-media-column col-12 mt-3">
+              <div class="social-media-title mb-3">
+                Let's connect
+              </div>
+              <div class="social-media-links-wrapper">
+                <a href="https://twitter.com/Qete_arg" rel="noreferrer noopener" target="_blank"><i class="social-media-link fab fa-twitter-square"></i></a>
+                <a href="https://www.linkedin.com/in/miguelricardogomez/" rel="noreferrer noopener" target="_blank"><i class="social-media-link fab fa-linkedin"></i></a>
+                <a href="https://github.com/MiguelArgentina" rel="noreferrer noopener" target="_blank"><i class="social-media-link fab fa-github-square"></i></a>
+                <a href="https://t.me/TucuGomez" rel="noreferrer noopener" target="_blank"><i class="social-media-link fab fa-telegram"></i></a>
+              </div>
+              <a href="#" class="get-resume-btn mt-4 btn btn-clipboard border border-primary text-primary">Get my resume</a>
+            </div>
           </div>
-          <div class="lang-framew-details bg-white mt-4">
+
+          <div class="lang-framew-details col-xl-6 bg-white mt-4 mt-xl-0">
 
             <div class="accordion" id="accordionExample">
               <div class="accordion-item rounded border-0 border-bottom my-3">
@@ -256,13 +325,13 @@
     <div class="contact-me-wrapper bg-white">
       <section class="contact-me">
         <div class="container">
-          <div class="row mx-1">
-            <div class="welcome-text-column text-center col-12 mt-5">
+          <div class="row mx-1 col-xl-6 d-flex mx-xl-auto jsutify-content-center">
+            <div class="welcome-text-column text-center mx-xl-auto col-12 mt-5">
               <h1 class="mt-3 text-white">Contact me</h1>
             </div>
             <div class="my-description-column col-12 mt-3 mb-3">
-              <p class="text-white">
-                I’m a software developer! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
+              <p class="contact-me-text">
+                If you have an application you are interested in developing, a feature that you need built or a project that needs coding, I’d love to help with it
               </p>
             </div>
 
@@ -312,15 +381,14 @@
 
 
 
-  <script src="https://code.jquery.com/jquery-latest.min.js"
-          type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
-    <script type="text/javascript">
-          $(".nav-link").click(function () {
-              //alert("Hello!");
-              $('.navbar-collapse').collapse('hide');
+  <script type="text/javascript">
+    $(".nav-link").click(function() {
+      //alert("Hello!");
+      $('.navbar-collapse').collapse('hide');
 
-          });
+    });
   </script>
 
 
