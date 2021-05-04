@@ -54,4 +54,4 @@ Give a ⭐️ if you like this project!
 
 ### 📝 License
 
-This project is [MIT](https://github.com/MiguelArgentina/microverse-ruby-capstone-project/blob/main/LICENSE) licensed.
+This project is [MIT](README.md) licensed.
