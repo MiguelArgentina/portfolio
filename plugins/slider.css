@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -9,11 +9,13 @@ Primary style
   display: inline-block;
   position: relative;
   text-align: left;
+  width: 97vw!important;
 }
 .cd-words-wrapper b {
   display: inline-block;
   position: absolute;
-  white-space: nowrap;
+  white-space: normal;
+  word-wrap: break-word;
   left: 0;
   top: 0;
 }
@@ -28,9 +30,9 @@ Primary style
 }
 
 
-xslide 
+xslide
 
--------------------------------- */
+-------------------------------- *
 .cd-headline.slide span {
   display: inline-block;
   padding: .2em 0;
@@ -38,7 +40,7 @@ xslide
 .cd-headline.slide .cd-words-wrapper {
   overflow: hidden;
   vertical-align: top;
-  width: auto!important;
+  width: 98vw!important;
 }
 .cd-headline.slide b {
   opacity: 0;
@@ -165,5 +167,5 @@ xslide
     transform: translateY(100%);
   }
 }
-/* -------------------------------- 
+/* --------------------------------
 
