@@ -17,7 +17,7 @@ Visit [My portfolio](https://miguelargentina.github.io/portfolio/)!
 
 ## Screenshot
 
-![alt text](assets/screenshots/portfolio.png "Portfolio screenshot")
+![alt text](assets/screenshots/portfolio_updated.png "Portfolio screenshot")
 
 ## Built With
 
