@@ -1,411 +1,510 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
 
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html class="no-js">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PF60M6MGGP"></script>
-  
-  <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
-   gtag('config', 'G-PF60M6MGGP');
-  </script>
-  
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
-  <!-- Fontawesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="icon" href="favicon.ico">
+    <title>Miguel Gomez Dev</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <!-- Google fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="assets/styles/style.css">
-
-
-
-  <title>Miguel 'Tucu' Gomez Portfolio</title>
-  <meta name="description" content="My Portfolio showing projects and habilities">
-  <meta property="og:title" content="Miguel 'Tucu' Gomez Portfolio"/>
-  <meta property="og:url" content="https://miguelargentina.github.io/portfolio/"/>
-  <meta property="og:description" content="My Portfolio showing projects and habilities">
-  <meta property="og:image:secure_url" itemprop="image" content="https://miguelargentina.github.io/portfolio/assets/screenshots/portfolio.png">
-  <meta property="og:type" content="profile" />
-  <meta property="og:locale" content="en_US" />
-
+    <!-- Template CSS Files
+    ================================================== -->
+    <!-- Twitter Bootstrs CSS -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <!-- Ionicons Fonts Css -->
+    <link rel="stylesheet" href="plugins/ionicons/ionicons.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="plugins/animate-css/animate.css">
+    <!-- Hero area slider css-->
+    <link rel="stylesheet" href="plugins/slider/slider.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="plugins/slick/slick.css">
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="plugins/facncybox/jquery.fancybox.css">
+    <!-- hover -->
+    <link rel="stylesheet" href="plugins/hover/hover-min.css">
+    <!-- template main css file -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <header>
-    <div class="navbar-wrapper d-xl-none">
-      <nav class="navbar navbar-expand-xl navbar-light bg-white">
-        <div class="container">
-          <img class="brand-logo" src="assets/images/logo.png" alt="Brand Logo">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto ms-3">
-              <li class="nav-item">
-                <a class="nav-link text-white mt-5" href="#portfolio">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white my-3" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white mb-3" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
 
-    <nav class="navbar d-none d-xl-flex navbar-light bg-light">
-
-      <div class="col-12 d-xl-flex bg-white justify-content-between align-items-top mt-2">
-        <a class="navbar-brand ms-5" href="#">
-          <img src="assets/images/logo.png" alt="Brand Logo" class="d-inline-block align-text-top">
-        </a>
-        <div class="navbar-links-wrapper d-flex align-items-top mt-3 me-5">
-
-          <a class="navbar-link" href="#portfolio">Portfolio</a>
-
-          <a class="navbar-link mx-5" href="#about">About</a>
-
-          <a class="navbar-link " href="#contact">Contact</a>
-
-        </div>
-
-      </div>
-    </nav>
-
+<!--
+        ==================================================
+        Header Section Start
+        ================================================== -->
+<section class="top-bar animated-header">
     <div class="container">
-      <div class="row mx-1">
-        <div class="welcome-text-column col-12 mt-4">
-          <h1 id="foo" class="foo">I'm Miguel 'Tucu' Gomez, welcome to my portfolio!</h1>
-        </div>
-        <div class="my-description-column col-12 mt-3">
-          <p class="">
-            I’m a software developer! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
-          </p>
-        </div>
-        <div class="social-media-column col-12 mt-3">
-          <div class="social-media-title mb-3">
-            Let's connect
-          </div>
-          <div class="social-media-links-wrapper">
-            <a href="https://twitter.com/Qete_arg" rel="noreferrer noopener" target="_blank"><i class="social-media-link fab fa-twitter-square"></i></a>
-            <a href="https://www.linkedin.com/in/miguelricardogomez/" rel="noreferrer noopener" target="_blank"><i class="social-media-link fab fa-linkedin"></i></a>
-            <a href="https://github.com/MiguelArgentina" rel="noreferrer noopener" target="_blank"><i class="social-media-link fab fa-github-square"></i></a>
-            <a href="https://t.me/TucuGomez" rel="noreferrer noopener" target="_blank"><i class="social-media-link fab fa-telegram"></i></a>
-          </div>
-        </div>
-      </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../images/logo.png" alt="logo" class="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#hero-area">Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">
+                                    My Social Media
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a target="_blank" href="https://github.com/MiguelArgentina" class="dropdown-item Github">
+                                        GitHub <i class="ion-social-github"></i>
+                                    </a>
+                                    <a target="_blank" href="https://twitter.com/Qete_arg" class="dropdown-item Twitter">
+                                        Twitter <i class="ion-social-twitter"></i>
+                                    </a>
+                                    <a target="_blank" href="https://www.linkedin.com/in/miguelricardogomez/" class="dropdown-item Linkedin">
+                                        LinkedIn <i class="ion-social-linkedin"></i>
+                                    </a>
+                                    <a target="_blank" href="https://t.me/TucuGomez" class="dropdown-item Google Plus">
+                                        Telegram <i class="ion-paper-airplane"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </div>
+</section>
 
-  </header>
-
-  <section id="portfolio" class="projects-container mt-4">
+<!--
+==================================================
+Slider Section Start
+================================================== -->
+<section id="hero-area">
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="card mx-auto flex-xl-row-reverse w-90">
-            <div class="image-container cont-1">
-              <div class="card-img-top d-flex justify-content-around">
-                <img src="assets/images/mern_scrsh1.png" class="card-img-top- " alt="..." onclick="window.open(this.src, '_blank');">
-              </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title my-2">MERN social app</h5>
-              <div class="subtitle-tags-container mb-3 mt-xl-3">
-                <span><strong class="text-dark">Tucu Soft</strong></span>
-                <i class="fas fa-circle mx-2"></i>
-                <span class="text-muted">Full Stack Dev</span>
-                <i class="fas fa-circle mx-2"></i>
-                <span class="text-muted">2021</span>
-              </div>
-              <p class="card-text">This is a full MERN app to enhance my full-stack skills. Client side uses React and server side uses nodeJs and a mongoDB DB. </p>
-              <div class="badges-container mt-3">
-                <span class="badge">React</span>
-                <span class="badge mx-1">MongoDB</span>
-                <span class="badge">HTML</span>
-                <span class="badge">CSS</span>
-              </div>
-              <a href="https://mern-social-app-practice-tucu.netlify.app/" target="_blank" class="see-project-btn mt-4 btn btn-clipboard border border-primary text-primary">Live demo</a>
-              <a href="https://github.com/MiguelArgentina/mern-media-app" target="_blank" class="see-project-btn mt-4 btn btn-clipboard border border-primary text-primary">Repository</a>
-            </div>
-          </div>
-          <br>
-          <div class="card mx-auto flex-xl-row w-90">
-            <div class="image-container">
-              <div class="card-img-top d-flex justify-content-around">
-                <img src="assets/images/ror_scr1.png" class="card-img-top- " alt="..." onclick="window.open(this.src, '_blank');">
-                <img src="assets/images/ror_scr2.png" class="card-img-top- " alt="..." onclick="window.open(this.src, '_blank');">
-              </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title my-2">Physicall activity app</h5>
-              <div class="subtitle-tags-container mb-3 mt-xl-3">
-                <span><strong class="text-dark">Tucu Soft</strong></span>
-                <i class="fas fa-circle mx-2"></i>
-                <span class="text-muted">Full Stack Dev</span>
-                <i class="fas fa-circle mx-2"></i>
-                <span class="text-muted">2021</span>
-              </div>
-              <p class="card-text">RoR web app to compete between friends or family and keep healthy. Free sign-up. Add categories, activities and log how much physical activity you practice</p>
-              <div class="badges-container mt-3">
-                <span class="badge">Ruby</span>
-                <span class="badge mx-1">Rails</span>
-                <span class="badge">HTML</span>
-                <span class="badge">CSS</span>
-              </div>
-              <a href="https://github.com/MiguelArgentina/ror-capstone-group-our-transactions/tree/navigation" target="_blank" class="see-project-btn mt-4 btn btn-clipboard border border-primary text-primary">Live demo</a>
-               <a href="https://peaceful-chamber-68618.herokuapp.com/" target="_blank" class="see-project-btn mt-4 btn btn-clipboard border border-primary text-primary">Repository</a>
-            </div>
-          </div>
-          <br>
-          <div class="card mx-auto flex-xl-row-reverse w-90">
-            <div class="image-container cont-1">
-              <div class="card-img-top d-flex justify-content-around">
-                <img src="assets/images/telegram-bot-2.jpeg" class="card-img-top- " alt="..." onclick="window.open(this.src, '_blank');">
-                <img src="assets/images/ruby-scr1.png" class="card-img-top- " alt="..." onclick="window.open(this.src, '_blank');">
-              </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title my-2">Telegram bot</h5>
-              <div class="subtitle-tags-container mb-3 mt-xl-3">
-                <span><strong class="text-dark">Tucu Soft</strong></span>
-                <i class="fas fa-circle mx-2"></i>
-                <span class="text-muted">Back End Dev</span>
-                <i class="fas fa-circle mx-2"></i>
-                <span class="text-muted">2021</span>
-              </div>
-              <p class="card-text">Want to know how the weather is where you are or in any city in the world? This bot does the job for you. Just ask this automated weather friend!</p>
-              <div class="badges-container mt-3">
-                <span class="badge">Ruby</span>
-              </div>
-              <a href="https://t.me/tucu_clima_bot" target="_blank" class="see-project-btn mt-4 btn btn-clipboard border border-primary text-primary">Live demo</a>
-              <a href="https://github.com/MiguelArgentina/microverse-ruby-capstone-project" target="_blank" class="see-project-btn mt-4 btn btn-clipboard border border-primary text-primary">Repository</a>
-            </div>
-          </div>
-          <br>
-          <div class="card mx-auto flex-xl-row w-90">
-            <div class="image-container cont-2">
-              <div class="card-img-top d-flex justify-content-around">
-                <img src="assets/images/game1.png" class="card-img-top- " alt="..." onclick="window.open(this.src, '_blank');">
-              </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title my-2">Spaceship game</h5>
-              <div class="subtitle-tags-container mb-3 mt-xl-3">
-                <span><strong class="text-dark">Tucu Soft</strong></span>
-                <i class="fas fa-circle mx-2"></i>
-                <span class="text-muted">Javascript + Phaser 3</span>
-                <i class="fas fa-circle mx-2"></i>
-                <span class="text-muted">2021</span>
-              </div>
-              <p class="card-text"> The game takes place in space, bounded by the screen size of the game. The objective is to collect as many gold and silver energy pills as possible while not crashing with the enemyes, who fly around.</p>
-              <div class="badges-container mt-3">
-                <span class="badge">Phaser 3</span>
-                <span class="badge mx-1">HTML5/css3</span>
-                <span class="badge">Javascript</span>
-                <span class="badge">Webpack</span>
-              </div>
-              <a href="https://jovial-aryabhata-576249.netlify.app/" target="_blank" class="see-project-btn mt-4 btn btn-clipboard border border-primary text-primary">Live demo</a>
-              <a href="https://github.com/MiguelArgentina/js-capstone-project" target="_blank" class="see-project-btn mt-4 btn btn-clipboard border border-primary text-primary">Repository</a>
-            </div>
-          </div>
-          <br>
-          <div class="card mx-auto flex-xl-row-reverse w-90">
-            <div class="image-container cont-3">
-              <img src="assets/images/html-css-scr1.png" class="card-img-top" alt="..." onclick="window.open(this.src, '_blank');">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title my-2">Html + Css Clone</h5>
-              <div class="subtitle-tags-container mb-3 mt-xl-3">
-                <span><strong class="text-dark">Tucu Soft</strong></span>
-                <i class="fas fa-circle mx-2"></i>
-                <span class="text-muted">Front End Dev</span>
-                <i class="fas fa-circle mx-2"></i>
-                <span class="text-muted">2021</span>
-              </div>
-              <p class="card-text">This is an online store site based on a Behance design to test my habilities as a front end developer!</p>
-              <div class="badges-container mt-3">
-                <span class="badge">HTML</span>
-                <span class="badge mx-1">CSS</span>
-              </div>
-              <a href="https://miguelargentina.github.io/html-css-capstone-project/" target="_blank" class="see-project-btn mt-4 btn btn-clipboard border border-primary text-primary">Live demo</a>
-              <a href="https://github.com/MiguelArgentina/html-css-capstone-project/tree/initial-branch" target="_blank" class="see-project-btn mt-4 btn btn-clipboard border border-primary text-primary">Repository</a>
-            </div>
-          </div>
-          <br>
-        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="block wow fadeInUp" data-wow-delay=".3s">
 
-      </div>
+                    <!-- Slider -->
+                    <section class="cd-intro">
+                        <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s">
+                            <span>HI, MY NAME IS MIGUEL, <small>aka</small> 'EL TUCU' &amp; I AM A</span><br>
+                            <span class="cd-words-wrapper">
+                <b class="is-visible">SOFTWARE DEVELOPER</b>
+                <b>RUBYIST UNDER CONSTRUCTION</b>
+                <b>PROBLEM SOLVER</b>
+              </span>
+                        </h1>
+                    </section> <!-- cd-intro -->
+                    <!-- /.slider -->
+                    <h2 class="wow fadeInUp animated" data-wow-delay=".6s">
+                        I’m a software developer! I can help you build a product, feature or website.
+                        Look through some of my work and experience! If you like what you see and have a project you need to get developed,
+                        don’t hesitate to contact me.
+                    </h2>
+                </div>
+            </div>
+        </div>
     </div>
+</section>
+<!--/#main-slider-->
 
-  </section>
-
-  <footer>
-    <section id="about" class="about-container py-xl-5">
-      <div class="container">
-        <div class="row mx-1">
-          <div class="about-details col-xl-6">
-            <div class="welcome-text-column-footer col-12 mt-4 mt-xl-0">
-              <h1>About Myself</h1>
-            </div>
-            <div class="my-description-column col-12 mt-3">
-              <p class="">
-                I’m a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
-              </p>
-            </div>
-            <div class="social-media-column col-12 mt-3">
-              <div class="social-media-title mb-3">
-                Let's connect
-              </div>
-              <div class="social-media-links-wrapper">
-                <a href="https://twitter.com/Qete_arg" rel="noreferrer noopener" target="_blank"><i class="social-media-link fab fa-twitter-square"></i></a>
-                <a href="https://www.linkedin.com/in/miguelricardogomez/" rel="noreferrer noopener" target="_blank"><i class="social-media-link fab fa-linkedin"></i></a>
-                <a href="https://github.com/MiguelArgentina" rel="noreferrer noopener" target="_blank"><i class="social-media-link fab fa-github-square"></i></a>
-                <a href="https://t.me/TucuGomez" rel="noreferrer noopener" target="_blank"><i class="social-media-link fab fa-telegram"></i></a>
-              </div>
-              <a href="assets/MiguelRicardoGomez.pdf" class="get-resume-btn mt-4 btn btn-clipboard border border-primary text-primary" target="_blank">Get my resume</a>
-            </div>
-          </div>
-
-          <div class="lang-framew-details col-xl-6 bg-white mt-4 mt-xl-0">
-
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item rounded border-0 border-bottom my-3">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    Languages
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body bg-muted my-2">
-                    <div class="accordion-body-item d-flex d-xl-inline-flex flex-xl-column rounded justify-content-start">
-                      <div class="icon-wrapper d-flex align-items-center  w-25">
-                        <img src="assets/icons/icons8-html-5-50.png" alt="Javascript icon" class="ms-2 py-2 rounded-circle">
-                      </div>
-                      <p class="accordion-body-item-text text-start text-wrap align-self-center w-75 ps-3 ps-xl-0">HTML 5</p>
-                    </div>
-                    <div class="accordion-body-item d-flex d-xl-inline-flex flex-xl-column rounded justify-content-start">
-                      <div class="icon-wrapper d-flex align-items-center  w-25">
-                        <img src="assets/icons/icons8-css3-50.png" alt="Javascript icon" class="ms-2 py-2 rounded-circle">
-                      </div>
-                      <p class="accordion-body-item-text text-start align-self-center w-75 ps-3 ps-xl-0">CSS 3</p>
-                    </div>
-                    <div class="accordion-body-item d-flex d-xl-inline-flex flex-xl-column rounded justify-content-start">
-                      <div class="icon-wrapper d-flex align-items-center  w-25">
-                        <img src="assets/icons/icons8-javascript-50.png" alt="Javascript icon" class="ms-2 py-2 rounded-circle">
-                      </div>
-                      <p class="accordion-body-item-text text-start align-self-center w-75 ps-3 ps-xl-0">JavaScript</p>
-                    </div>
-                    <div class="accordion-body-item d-flex d-xl-inline-flex flex-xl-column flex-xl-wrap rounded justify-content-start">
-                      <div class="icon-wrapper d-flex align-items-center  w-25">
-                        <img src="assets/icons/icons8-ruby-programming-language-50.png" alt="Javascript icon" class="ms-2 py-2 rounded-circle">
-                      </div>
-                      <p class="accordion-body-item-text text-start align-self-center w-75 ps-3 ps-xl-0">Ruby</p>
-                    </div>
-                  </div>
+<!--
+==================================================
+About Section Start
+================================================== -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+                    <h2>
+                        ABOUT ME
+                    </h2>
+                    <p>
+                        Hello, I'm fascinated with Ruby, and I'm a Rubyist under construction, learning a bit every day.
+                        I love solving problems and making up ingenious solutions that make other's people lives easier
+                    </p>
+                    <p>
+                        I become a developer a few years ago, leaving behind many years of experience in another line of work,
+                        only to discover that this is the path I love and enjoy every day of my life
+                    </p>
                 </div>
-              </div>
-              <div class="accordion-item rounded border-0 border-bottom my-3">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Frameworks
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body bg-muted my-2">
-                    <div class="accordion-body-item d-flex d-xl-inline-flex flex-xl-column rounded justify-content-start">
-                      <div class="icon-wrapper d-flex align-items-center  w-25">
-                        <img src="assets/icons/icons8-bootstrap-50.png" alt="Javascript icon" class="ms-2 py-2 rounded-circle">
-                      </div>
-                      <p class="accordion-body-item-text text-start text-wrap align-self-center w-75 ps-3 ps-xl-0">Bootstrap</p>
-                    </div>
-                    <div class="accordion-body-item d-flex d-xl-inline-flex flex-xl-column rounded justify-content-start">
-                      <div class="icon-wrapper d-flex align-items-center  w-25">
-                        <img src="assets/icons/icons8-ruby-on-rails-50.png" alt="Javascript icon" class="ms-2 py-2 rounded-circle">
-                      </div>
-                      <p class="accordion-body-item-text text-start text-wrap align-self-center w-75 ps-3 ps-xl-0">Rails</p>
-                    </div>
-                    <div class="accordion-body-item d-flex d-xl-inline-flex flex-xl-column rounded justify-content-start">
-                      <div class="icon-wrapper d-flex align-items-center  w-25">
-                        <img src="assets/icons/icons8-react-50.png" alt="Javascript icon" class="ms-2 py-2 rounded-circle">
-                      </div>
-                      <p class="accordion-body-item-text text-start text-wrap align-self-center w-75 ps-3 ps-xl-0">React</p>
-                    </div>
-                    <div class="accordion-body-item d-flex d-xl-inline-flex flex-xl-column rounded justify-content-start">
-                      <div class="icon-wrapper d-flex align-items-center  w-25">
-                        <img src="assets/icons/icons8-redux-50.png" alt="Javascript icon" class="ms-2 py-2 rounded-circle">
-                      </div>
-                      <p class="accordion-body-item-text text-start text-wrap align-self-center w-75 ps-3 ps-xl-0">Redux</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item rounded border-0 border-bottom my-3">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Skills
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                  <div class="accordion-body bg-muted my-2">
-                    <div class="accordion-body-item d-flex d-xl-inline-flex flex-xl-column rounded justify-content-start">
-                      <div class="icon-wrapper d-flex align-items-center  w-25">
-                        <img src="assets/icons/icons8-arduino-50.png" alt="Javascript icon" class="ms-2 py-2 rounded-circle">
-                      </div>
-                      <p class="accordion-body-item-text text-start text-wrap align-self-center w-75 ps-3 ps-xl-0">Arduino integration</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
             </div>
-
-
-          </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+                    <img src="images/about/ror-christina-morillo.jpg" alt="ruby on rails code">
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
-   
-  </footer>
+    </div>
+</section> <!-- /#about -->
 
 
+<!--
+==================================================
+Portfolio Section Start
+================================================== -->
+<section id="works" class="works">
+    <div class="container">
+        <div class="section-heading">
+            <h1 class="title wow fadeInDown" data-wow-delay=".3s">Latest Works</h1>
+            <p class="wow fadeInDown" data-wow-delay=".5s">
+                My main goal is to become a solid backend developer,
+                but every now and then I like to play around with some fullstack development
+                and even mixing some electronics and domotics with my apps development passion
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
+                    <div class="img-wrapper">
+                        <img src="images/portfolio/item-7.png" class="img-fluid" alt="this is a title">
+                        <div class="overlay">
+                            <div class="buttons">
+                                <a target="_blank" class="fancybox" href="https://codm-tournaments-manager.herokuapp.com">Live demo</a>
+                                <a target="_blank" href="https://github.com/MiguelArgentina/tournaments-manager">Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <figcaption>
+                        <h4>
+                            <a target="_blank" href="https://github.com/MiguelArgentina/tournaments-manager">
+                                Online Tournaments Manager
+                            </a>
+                        </h4>
+                        <p>
+                        <div class="badges-container mt-3">
+                            <span class="badge badge-secondary">Ruby</span>
+                            <span class="badge badge-secondary mx-1">Rails</span>
+                            <span class="badge badge-secondary">Bootstrap</span>
+                            <span class="badge badge-secondary">Devise</span>
+                        </div>
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
+                    <div class="img-wrapper">
+                        <img src="images/portfolio/item-1.png" class="img-fluid" alt="this is a title">
+                        <div class="overlay">
+                            <div class="buttons">
+                                <a target="_blank" class="fancybox" href="https://peaceful-chamber-68618.herokuapp.com/">Live demo</a>
+                                <a target="_blank" href="https://github.com/MiguelArgentina/ror-capstone-group-our-transactions/tree/navigation">Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <figcaption>
+                        <h4>
+                            <a target="_blank" href="https://github.com/MiguelArgentina/ror-capstone-group-our-transactions/tree/navigation">
+                                Physicall activity app
+                            </a>
+                        </h4>
+                        <p>
+                        <div class="badges-container mt-3">
+                            <span class="badge badge-secondary">Ruby</span>
+                            <span class="badge badge-secondary mx-1">Rails</span>
+                            <span class="badge badge-secondary">HTML</span>
+                            <span class="badge badge-secondary">CSS</span>
+                        </div>
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <div class="img-wrapper">
+                        <img src="images/portfolio/item-2.png" class="img-fluid" alt="this is a title">
+                        <div class="overlay">
+                            <div class="buttons">
+                                <a target="_blank" class="fancybox" href="https://t.me/tucu_clima_bot">Live Demo</a>
+                                <a target="_blank" href="https://github.com/MiguelArgentina/microverse-ruby-capstone-project">Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <figcaption>
+                        <h4>
+                            <a target="_blank" href="https://github.com/MiguelArgentina/microverse-ruby-capstone-project">
+                                Telegram bot
+                            </a>
+                        </h4>
+                        <p>
+                        <div class="badges-container mt-3">
+                            <span class="badge badge-secondary">Ruby</span>
+                        </div>
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="300ms">
+                    <div class="img-wrapper">
+                        <img src="images/portfolio/item-3.png" class="img-fluid" alt="">
+                        <div class="overlay">
+                            <div class="buttons">
+                                <a target="_blank" class="fancybox" href="https://jovial-aryabhata-576249.netlify.app/">Live Demo</a>
+                                <a target="_blank" href="https://github.com/MiguelArgentina/js-capstone-project">Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <figcaption>
+                        <h4>
+                            <a target="_blank" href="https://github.com/MiguelArgentina/js-capstone-project">
+                                Spaceship game
+                            </a>
+                        </h4>
+                        <p>
+                        <div class="badges-container mt-3">
+                            <span class="badge badge-secondary">Phaser 3</span>
+                            <span class="badge badge-secondary mx-1">HTML5/CSS</span>
+                            <span class="badge badge-secondary">Javascript</span>
+                            <span class="badge badge-secondary">Webpack</span>
+                        </div>
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="600ms">
+                    <div class="img-wrapper">
+                        <img src="images/portfolio/item-4.png" class="img-fluid" alt="">
+                        <div class="overlay">
+                            <div class="buttons">
+                                <a target="_blank" class="fancybox" href="https://miguelargentina.github.io/html-css-capstone-project/">Live Demo</a>
+                                <a target="_blank" href="https://github.com/MiguelArgentina/html-css-capstone-project/tree/initial-branch">Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <figcaption>
+                        <h4>
+                            <a target="_blank" href="https://github.com/MiguelArgentina/html-css-capstone-project/tree/initial-branch">
+                                HTML + CSS clone
+                            </a>
+                        </h4>
+                        <p>
+                        <div class="badges-container mt-3">
+                            <span class="badge badge-secondary">HTML</span>
+                            <span class="badge badge-secondary mx-1">CSS</span>
+                        </div>
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="900ms">
+                    <div class="img-wrapper">
+                        <img src="images/portfolio/item-8.png" class="img-fluid" alt="">
+                        <div class="overlay">
+                            <div class="buttons">
+                                <a target="_blank" class="fancybox" href="https://mern-social-app-practice-tucu.netlify.app/">Live Demo</a>
+                                <a target="_blank" href="https://github.com/MiguelArgentina/mern-media-app">Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <figcaption>
+                        <h4>
+                            <a target="_blank" href="https://github.com/MiguelArgentina/mern-media-app">
+                                MERN social app
+                            </a>
+                        </h4>
+                        <p>
+                        <div class="badges-container mt-3">
+                            <span class="badge badge-secondary">React</span>
+                            <span class="badge badge-secondary">MongoDB</span>
+                            <span class="badge badge-secondary">HTML</span>
+                            <span class="badge badge-secondary mx-1">CSS</span>
+                        </div>
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section> <!-- #works -->
 
-  <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<!--
+==================================================
+Call To Action Section Start
+================================================== -->
+<section id="call-to-action">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block align-items-center" id="contact">
+                    <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">
+                        SO WHAT YOU THINK ?
+                    </h2>
+                    <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">
+                        If yo got this far, you're certainly interested, so why not?
+                        <br>
+                        Let's get in touch!
+                    </p>
+                    <p>
+                        <a class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms" data-toggle="collapse" href="#contactForm" role="button" aria-expanded="false" aria-controls="contactForm">
+                            Contact Me!
+                        </a>
+                    </p>
+                    <div class="collapse" id="contactForm">
+                        <div class="card card-body col-12 col-md-6 inner-collapse-content">
+                            <div class="social-media-contact d-flex justify-content-around">
+                                <!-- Social Media -->
+                                <a target="_blank" href="https://github.com/MiguelArgentina" class="Github">
+                                    <i class="ion-social-github"></i>
+                                </a>
+                                <a target="_blank" href="https://twitter.com/Qete_arg" class="Twitter">
+                                    <i class="ion-social-twitter"></i>
+                                </a>
+                                <a target="_blank" href="https://www.linkedin.com/in/miguelricardogomez/" class="Linkedin">
+                                    <i class="ion-social-linkedin"></i>
+                                </a>
+                                <a target="_blank" href="https://t.me/TucuGomez" class="Google Plus">
+                                    <i class="ion-paper-airplane"></i>
+                                </a>
+                            </div>
+                            <!--
+==================================================
+Contact Section Start
+================================================== -->
+                            <!--<section id="contact-section">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 mb-5 mb-md-0">
+                                            <div class="block">
+                                                <div class="contact-form">
+                                                    <form id="contact-form" method="#" action="#" role="form">
+                                                        <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
+                                                            <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
+                                                        </div>
 
-  <script type="text/javascript">
-    $(".nav-link").click(function() {
-      //alert("Hello!");
-      $('.navbar-collapse').collapse('hide');
+                                                        <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".8s">
+                                                            <input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
+                                                        </div>
 
-    });
-  </script>
+                                                        <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
+                                                            <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
+                                                        </div>
 
+                                                        <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.2s">
+                                                            <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>
+                                                        </div>
 
-  <!-- Optional JavaScript; choose one of the two! -->
+                                                        <div id="success" class="success">
+                                                            Thank you. The Mailman is on His Way :)
+                                                        </div>
 
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+                                                        <div id="error" class="error">
+                                                            Sorry, don't know what happened. Try later :(
+                                                        </div>
 
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    -->
+                                                        <div id="submit" class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
+                                                            <button type="submit" id="contact-submit" class="btn btn-default btn-send hvr-bounce-to-right"
+                                                                    value="Send Message">Send Message</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>-->
+                        </div>
+                    </div>
 
-  <script data-cfasync="false" type="text/javascript" src="assets/scripts/form-submission-handler.js"></script>
+                </div>
+            </div>
 
+        </div>
+    </div>
+</section>
+
+<!--
+==================================================
+Footer Section Start
+================================================== -->
+<footer id="footer">
+    <div class="container">
+        <div class="row content-justify-between">
+            <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+                <p class="copyright">Copyright: Design and Developed by <a href="http://www.Themefisher.com" target="_blank">Themefisher</a>.</p>
+                <p class="copyright">   Get More Bootstrap Template From Our<a href="https://themefisher.com/free-bootstrap-templates/" target="_blank">Store</a></p>
+            </div>
+            <div class="col-md-4 col-12">
+                <!-- Social Media -->
+                <ul class="social text-center text-md-right text-lg-right">
+                    <li>
+                        <a target="_blank" href="https://github.com/MiguelArgentina" class="Github">
+                            <i class="ion-social-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/Qete_arg" class="Twitter">
+                            <i class="ion-social-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/miguelricardogomez/" class="Linkedin">
+                            <i class="ion-social-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://t.me/TucuGomez" class="Google Plus">
+                            <i class="ion-paper-airplane"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer> <!-- /#footer -->
+
+<!-- Template Javascript Files
+================================================== -->
+<!-- jquery -->
+<script src="plugins/jQurey/jquery.min.js"></script>
+<!-- Form Validation -->
+<script src="plugins/form-validation/jquery.form.js"></script>
+<script src="plugins/form-validation/jquery.validate.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- bootstrap js -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- wow js -->
+<script src="plugins/wow-js/wow.min.js"></script>
+<!-- slider js -->
+<script src="plugins/slider/slider.js"></script>
+<!-- Fancybox -->
+<script src="plugins/facncybox/jquery.fancybox.js"></script>
+<!-- template main js -->
+<script src="js/main.js"></script>
 </body>
-
 </html>
