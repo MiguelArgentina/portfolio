@@ -5,74 +5,11 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Snippet - BBBootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link href='#' rel='stylesheet'>
     <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <style>::-webkit-scrollbar {
-        width: 8px;
-    }
-    /* Track */
-    ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-    }
-
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-        background: #888;
-    }
-
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-    } .p-card {
-          border: 1px solid #eee;
-      }
-
-    .p-details {
-        padding: 10px;
-        border-radius: 0px;
-        background: #000;
-        color: #fff;
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
-    }
-
-    body {
-        background: #eee;
-    }
-
-    .spec span {
-        font-size: 13px;
-    }
-
-    .spec h6 {
-        font-size: 16px;
-        font-weight: 500;
-    }
-
-    .carousel-indicators li {
-        box-sizing: content-box;
-        -ms-flex: 0 1 auto;
-        flex: 0 1 auto;
-        width: 12px;
-        height: 12px;
-        margin-right: 3px;
-        margin-left: 3px;
-        text-indent: -999px;
-        cursor: pointer;
-        background-color: #fff;
-        background-clip: padding-box;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent;
-        opacity: .5;
-        transition: opacity .6s ease;
-    }
-
-    .line{
-
-        background-color: #fff;margin-top: 4px;margin-bottom: 4px;height: 0.2px;
-    }</style>
-
+    <!-- Font Awesome 5 CSS -->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'>
+    <!-- Products List CSS -->
+    <link rel="stylesheet" href="./css/style-garage-sale.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body className='snippet-body'>
@@ -142,180 +79,8 @@
         Header Section End
         ================================================== -->
 <div class="my-5 text-hide">.</div>
-<div class="container mt-5 mb-5">
-    <div class="row g-1">
-        <div class="col-md-4 product-card-wrapper">
-            <div class="p-carousel">
-                <div id="carousel-1" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <a href="#" class="pop">
-                                <img class="w-100 d-block" src="https://i.imgur.com/NwKcuYO.jpg" alt="Slide Image">
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="#" class="pop">
-                                <img class="w-100 d-block" src="https://i.imgur.com/DDTs3zs.jpg" alt="Slide Image">
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="#" class="pop">
-                                <img class="w-100 d-block" src="https://i.imgur.com/aFfL7MV.jpg" alt="Slide Image">
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-1" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-1" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="p-details">
-                <div class="d-flex justify-content-between align-items-center mx-2">
-                    <h5>Dell XPS 360</h5><span>$1,200</span>
-                </div>
-                <div class="mx-2">
-                    <hr class="line">
-                </div>
-                <div class="d-flex justify-content-between mt-2 spec mx-2">
-                    <div class="d-flex flex-column align-items-center">
-                        <p class="d-inline-block text-justify product-description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Ea fugiat illo iure totam unde ut velit! Accusamus, aliquam
-                            cumque delectus dolorem doloremque nemo quibusdam quis
-                            reprehenderit sequi sint temporibus tenetur?
-                        </p>
-                    </div>
-                </div>
-                <div class="buy mt-3">
-                    <a class="btn btn-outline-success" href="https://wa.me/5493815879150" target="_blank">
-                        Consultar stock
-                    </a>
-                </div>
-            </div>
-
-        </div>
-        <div class="col-md-4 product-card-wrapper">
-            <div class="p-carousel">
-                <div id="carousel-2" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <a href="#" class="pop">
-                                <img class="w-100 d-block" src="https://i.imgur.com/NwKcuYO.jpg" alt="Slide Image">
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="#" class="pop">
-                                <img class="w-100 d-block" src="https://i.imgur.com/DDTs3zs.jpg" alt="Slide Image">
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="#" class="pop">
-                                <img class="w-100 d-block" src="https://i.imgur.com/aFfL7MV.jpg" alt="Slide Image">
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-2" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="p-details">
-                <div class="d-flex justify-content-between align-items-center mx-2">
-                    <h5>Dell XPS 360</h5><span>$1,200</span>
-                </div>
-                <div class="mx-2">
-                    <hr class="line">
-                </div>
-                <div class="d-flex justify-content-between mt-2 spec mx-2">
-                    <div class="d-flex flex-column align-items-center">
-                        <p class="d-inline-block text-justify product-description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Ea fugiat illo iure totam unde ut velit! Accusamus, aliquam
-                            cumque delectus dolorem doloremque nemo quibusdam quis
-                            reprehenderit sequi sint temporibus tenetur?
-                        </p>
-                    </div>
-                </div>
-                <div class="buy mt-3">
-                    <a class="btn btn-outline-success" href="https://wa.me/5493815879150" target="_blank">
-                        Consultar stock
-                    </a>
-                </div>
-            </div>
-
-        </div>
-        <div class="col-md-4 product-card-wrapper">
-            <div class="p-carousel">
-                <div id="carousel-3" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <a href="#" class="pop">
-                                <img class="w-100 d-block" src="https://i.imgur.com/NwKcuYO.jpg" alt="Slide Image">
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="#" class="pop">
-                                <img class="w-100 d-block" src="https://i.imgur.com/DDTs3zs.jpg" alt="Slide Image">
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="#" class="pop">
-                                <img class="w-100 d-block" src="https://i.imgur.com/aFfL7MV.jpg" alt="Slide Image">
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-3" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-3" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="p-details">
-                <div class="d-flex justify-content-between align-items-center mx-2">
-                    <h5>Dell XPS 360</h5><span>$1,200</span>
-                </div>
-                <div class="mx-2">
-                    <hr class="line">
-                </div>
-                <div class="d-flex justify-content-between mt-2 spec mx-2">
-                    <div class="d-flex flex-column align-items-center">
-                        <p class="d-inline-block text-justify product-description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Ea fugiat illo iure totam unde ut velit! Accusamus, aliquam
-                            cumque delectus dolorem doloremque nemo quibusdam quis
-                            reprehenderit sequi sint temporibus tenetur?
-                        </p>
-                    </div>
-                </div>
-                <div class="buy mt-3">
-                    <a class="btn btn-outline-success" href="https://wa.me/5493815879150" target="_blank">
-                        Consultar stock
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </div>
+<div class="my-1 text-hide">.</div>
+<div id="outer" class="container overflow-hidden bg-white mt-5 mb-5">
 </div>
 
 <!-- Modal -->
@@ -337,15 +102,145 @@
 </div>
 <!-- Modal end -->
 <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js'></script>
-<script type='text/javascript' src='#'></script>
-<script type='text/javascript' src='#'></script>
-<script type='text/javascript' src='#'></script>
-<script type='text/javascript'>#</script>
 <script type='text/javascript'>
     var myLink = document.querySelector('a[href="#"]');
     myLink.addEventListener('click', function(e) {
         e.preventDefault();
     });
+</script>
+<script type='text/javascript'>
+    //this is just for demo ..
+    var products_index = [
+        {
+            name: 'Dell Computer',
+            price: '50000',
+            images: [
+                'https://i.imgur.com/NwKcuYO.jpg',
+                'https://i.imgur.com/DDTs3zs.jpg',
+                'https://i.imgur.com/aFfL7MV.jpg'
+            ],
+            description: 'User friendly computer. In good cosmetic conditions. Used for programming',
+            category: 'Electronics',
+
+        },
+        {
+            name: 'Apple TV',
+            price: '120000',
+            images: [
+                'https://i.imgur.com/a0KkSv3.jpeg',
+                'https://i.imgur.com/h0MsFt7.jpeg',
+                'https://i.imgur.com/VCXoUo3.jpeg'
+            ],
+            description: 'Used but in good cosmetic conditions.',
+            category: 'Electronics',
+
+        },
+        {
+            name: 'Bose Speaker',
+            price: '85000',
+            images: [
+                'https://i.imgur.com/U58ETLU.jpeg',
+                'https://i.imgur.com/kOVhBdf.png',
+                'https://i.imgur.com/nwI9oVl.jpeg'
+            ],
+            description: 'Used but in good cosmetic conditions.',
+            category: 'Electronics',
+
+        },
+        {
+            name: 'Dell Computer',
+            price: '50000',
+            images: [
+                'https://i.imgur.com/NwKcuYO.jpg',
+                'https://i.imgur.com/DDTs3zs.jpg',
+                'https://i.imgur.com/aFfL7MV.jpg'
+            ],
+            description: 'User friendly computer. In good cosmetic conditions. Used for programming',
+            category: 'Electronics',
+
+        },
+        {
+            name: 'Apple TV',
+            price: '120000',
+            images: [
+                'https://i.imgur.com/a0KkSv3.jpeg',
+                'https://i.imgur.com/h0MsFt7.jpeg',
+                'https://i.imgur.com/VCXoUo3.jpeg'
+            ],
+            description: 'Used but in good cosmetic conditions.',
+            category: 'Electronics',
+
+        },
+        {
+            name: 'Bose Speaker',
+            price: '85000',
+            images: [
+                'https://i.imgur.com/U58ETLU.jpeg',
+                'https://i.imgur.com/kOVhBdf.png',
+                'https://i.imgur.com/nwI9oVl.jpeg'
+            ],
+            description: 'Used but in good cosmetic conditions.',
+            category: 'Electronics',
+
+        },
+    ]
+
+    var htmls = "";
+    //loop through jsons
+    $(products_index).each(function(index, product) {
+        //append htmls...
+        htmls += `
+    ${index % 3 == 0 ? '<div class="row justify-content-around">' : ''}
+        <div class="gx-3 col-md-4 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
+            <div class="product">
+            <div class="p-carousel">
+                <div id="carousel-${index}" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="#" class="pop">
+                                <img class="product-image w-100 d-block" src="${product.images[0]}" alt="Slide Image">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#" class="pop">
+                                <img class="product-image w-100 d-block" src="${product.images[1]}" alt="Slide Image">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#" class="pop">
+                                <img class="product-image w-100 d-block" src="${product.images[2]}" alt="Slide Image">
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-${index}" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-${index}" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="tag bg-red">${product.category}</div>
+            <div class="title pt-4 pb-1">${product.name}</div>
+            <div class="d-flex align-content-center justify-content-center">
+                        <div class="icon">
+                            ${product.description}
+                        </div>
+            </div>
+            <div class="price">ar$ ${(+product.price).toLocaleString('es')}</div>
+            <a class="btn btn-outline-success rounded-left" href="https://wa.me/5493815879150" target="_blank">
+                        Consultar stock
+                    </a>
+        </div>
+    ${(index + 1) % 3 == 0 ? '</div>' : ''}
+    `
+    })
+    $("#outer").html(htmls) //add them in your dom..
 </script>
 <script type='text/javascript'>
     $(function() {
@@ -355,6 +250,6 @@
         });
     });
 </script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
