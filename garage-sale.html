@@ -265,6 +265,19 @@
 
         },
         {
+            name: 'Microondas Coventry',
+            price: '10000',
+            images: [
+                'https://i.imgur.com/omEIMxl.jpg',
+                'https://i.imgur.com/8u32Qys.jpg',
+                'https://i.imgur.com/Q2AVCVI.jpg'
+            ],
+            description: 'En uso actualmente. Funciona perfecto',
+            category: 'Electrodomésticos',
+            sold: 'true',
+
+        },
+        {
             name: 'Lavarropas Drean concept 5.05',
             price: '45000',
             images: [
@@ -333,7 +346,7 @@
         htmls += `
     ${index % 3 == 0 ? '<div class="row justify-content-around">' : ''}
         <div class="gx-3 col-md-4 col-sm-6 d-flex flex-column align-items-center justify-content-center product-item my-3">
-            <div class="product">
+            <div class="product" ${ product.sold == 'true' ? 'data-in-stock=\"vendido\"' : ''}>
             <div class="p-carousel">
                 <div id="carousel-${index}" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">

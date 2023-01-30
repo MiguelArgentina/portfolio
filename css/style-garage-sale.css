@@ -36,6 +36,34 @@ body {
     border-bottom: 3px solid #b71c1c
 }
 
+
+.product {
+    position: relative;
+    overflow: hidden;
+}
+
+[data-in-stock]:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    content: attr(data-in-stock);
+    display: block;
+
+    min-width: 160px;
+    color: #fff;
+    background: #e49809;
+    padding: 1% 20%;
+
+    text-transform: uppercase;
+    font: 1em Arial;
+
+    -webkit-transform: rotate(-42deg) translateX(-50px);
+    -moz-transform: rotate(-42deg) translateX(-50px);
+    transform: rotate(-42deg) translateX(-50px);
+}
+
 .container .product-item {
     min-height: 40vh;
     border: none;
