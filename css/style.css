@@ -91,9 +91,17 @@ a:hover {
 .social-share a {
   font-size: 20px;
   color: #fff;
-  background: #02bdd5;
+  background: #CA2B1A;
   padding: 4px 10px;
   display: inline-block;
+}
+
+.social-icon {
+  color: #CA2B1A;
+}
+
+.social-icon:hover {
+  color: #0f5da4;
 }
 
 .fancybox-close {
@@ -105,14 +113,14 @@ a:hover {
 }
 
 .fancybox-next span {
-  background: url("../images/icons/right.png") no-repeat scroll center center #009ee3;
+  background: url("../images/icons/right.png") no-repeat scroll center center #CA2B1A;
   height: 50px;
   width: 50px;
   right: 0;
 }
 
 .fancybox-prev span {
-  background: url("../images/icons/left.png") no-repeat scroll center center #009ee3;
+  background: url("../images/icons/left.png") no-repeat scroll center center #CA2B1A;
   height: 50px;
   width: 50px;
   left: 0;
@@ -131,7 +139,7 @@ a:hover {
   background-size: cover;
   padding: 120px 0 25px 0;
   position: relative;
-  background: #02bdd5;
+  background: #CA2B1A;
   color: #fff;
 }
 .global-page-header h2 {
@@ -210,7 +218,7 @@ a:hover {
   display: block;
 }
 .navbar .nav-item .nav-link:hover {
-  color: #02bdd5 !important;
+  color: #E79B8C !important;
 }
 .navbar .nav-item:last-child .nav-link {
   padding-right: 0;
@@ -251,7 +259,7 @@ a:hover {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .dropdown-item:hover {
-  color: #02bdd5 !important;
+  color: #CA2B1A !important;
   background: transparent;
 }
 .dropdown:hover .dropdown-menu {
@@ -315,8 +323,8 @@ a:hover {
 }
 
 #call-to-action {
-  background: #02bdd5;
-  background-size: cover;
+  background: url("../assets/images/bg-call-to-action.png") no-repeat center;
+  background-size: contain;
   background-attachment: fixed;
   padding: 80px 0;
   text-align: center;
@@ -341,7 +349,7 @@ a:hover {
 #call-to-action .block .btn-contact {
   background: #fff;
   border: 2px solid #fff;
-  color: #02bdd5;
+  color: #CA2B1A;
   padding: 15px 34px;
   margin-top: 20px;
   font-size: 12px;
@@ -355,7 +363,7 @@ a:hover {
 }
 #call-to-action .block .btn-contact:hover {
   color: #fff;
-  background: #02bdd5;
+  background: #d04a3b;
 }
 
 #about {
@@ -517,7 +525,7 @@ figure figcaption h4 {
   margin: 0;
 }
 figure figcaption h4 a {
-  color: #02bdd5;
+  color: #CA2B1A;
 }
 figure figcaption p {
   font-size: 14px;
@@ -1043,7 +1051,7 @@ article {
 }
 .service-page .service-parts .block i {
   font-size: 35px;
-  color: #02bdd5;
+  color: #CA2B1A;
 }
 .service-page .service-parts .block p {
   padding: 0 8px;
@@ -1072,7 +1080,7 @@ article {
   font-size: 13px;
 }
 .team-member h3 {
-  color: #02bdd5;
+  color: #CA2B1A;
   margin-bottom: 0;
   font-size: 20px;
 }
@@ -1080,7 +1088,7 @@ article {
   font-size: 14px;
 }
 .team-member .social-icons a {
-  background: #02bdd5;
+  background: #CA2B1A;
   color: #fff;
   padding: 4px 8px;
   display: inline-block;
@@ -1100,7 +1108,7 @@ article {
   margin-bottom: 0;
 }
 #footer .copyright a {
-  color: #02bdd5;
+  color: #CA2B1A;
 }
 #footer .social {
   text-align: right;
@@ -1112,11 +1120,11 @@ article {
 }
 #footer .social li a {
   font-size: 22px;
-  color: #02bdd5;
+  color: #CA2B1A;
 }
 
 .cd-headline.slide .cd-words-wrapper {
-  color: #02bdd5;
+  color: #CA2B1A;
 }
 
 ul.social-icons {
@@ -1145,7 +1153,7 @@ ul.social-icons li {
 }
 
 .badge-secondary {
-  background-color: #288d98;
+  background-color: #ec6254;
 }
 
 .portfolio-item {
