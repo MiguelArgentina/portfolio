@@ -202,9 +202,29 @@ About Section Start
 
             </div>
             <div class="col-md-6 col-sm-6">
-                <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-                    <img src="images/about/ror-christina-morillo.jpg" alt="ruby on rails code">
+
+
+                <div class="col-md-12 col-sm-12">
+                    <div class="block wow fadeInRight about-visual" data-wow-delay=".3s" data-wow-duration="500ms">
+                        <div class="code-snippet">
+                            <div class="code-snippet__header">
+                                <span class="dot dot--red"></span>
+                                <span class="dot dot--amber"></span>
+                                <span class="dot dot--green"></span>
+                                <span class="code-snippet__title">rails console</span>
+                            </div>
+                            <pre><code>> rails g resource project name:string status:integer
+> bundle exec rspec
+...
+3 examples, 0 failures
+
+{ name: "Portfolio", status: :polishing }
+</code></pre>
+                        </div>
+                    </div>
                 </div>
+
+
             </div>
         </div>
     </div>
@@ -258,8 +278,12 @@ Portfolio Section Start
             </div>
             <div class="col-md-4 col-sm-6">
                 <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
-                    <div class="img-wrapper">
-                        <img src="images/portfolio/item-7.png" class="img-fluid" alt="this is a title">
+                    <div class="img-wrapper portfolio-placeholder">
+                        <div class="placeholder-content">
+                            <h4 class="mb-1">Online Tournaments Manager</h4>
+                            <p class="mb-0">Tournament manager web app</p>
+                        </div>
+
                         <div class="overlay">
                             <div class="buttons">
                                 <a target="_blank" class="fancybox" href="https://codm-tournaments-manager.herokuapp.com">Live demo</a>
@@ -267,6 +291,7 @@ Portfolio Section Start
                             </div>
                         </div>
                     </div>
+
                     <figcaption>
                         <h4>
                             <a target="_blank" href="https://github.com/MiguelArgentina/tournaments-manager">

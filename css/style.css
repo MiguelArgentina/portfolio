@@ -1190,3 +1190,106 @@ ul.social-icons li {
   font-size: 2.3rem;
 }
 /*# sourceMappingURL=style.css.map */
+
+/* ===== Rails-like code snippet / terminal card ===== */
+
+.code-snippet {
+  --bg: #0f111a;
+  --header-bg: #151826;
+  --border: rgba(255, 255, 255, 0.08);
+  --divider: rgba(255, 255, 255, 0.06);
+  --title: rgba(255, 255, 255, 0.65);
+  --text: rgba(255, 255, 255, 0.88);
+  --shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  max-width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.code-snippet__header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  background: var(--header-bg);
+  border-bottom: 1px solid var(--divider);
+}
+
+.code-snippet__title {
+  margin-left: 8px;
+  font: 600 12px/1.2 var(--mono);
+  color: var(--title);
+  letter-spacing: 0.2px;
+  user-select: none;
+}
+
+/* macOS-style dots */
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  display: inline-block;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25) inset;
+}
+
+.dot--red { background: #ff5f56; }
+.dot--amber { background: #ffbd2e; }
+.dot--green { background: #27c93f; }
+
+.code-snippet pre {
+  margin: 0;
+  padding: 14px 16px 16px;
+  background: var(--bg);
+  overflow: auto;
+  max-height: 360px; /* remove if you don’t want vertical scrolling */
+}
+
+.code-snippet code {
+  display: block;
+  white-space: pre;
+  tab-size: 2;
+  font: 500 13px/1.55 var(--mono);
+  color: var(--text);
+  text-shadow: 0 0 18px rgba(80, 160, 255, 0.08);
+}
+
+/* Slightly nicer scrollbar (WebKit) */
+.code-snippet pre::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.code-snippet pre::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+}
+
+.code-snippet pre::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.04);
+}
+/* Make the card bigger */
+.code-snippet {
+  width: min(720px, 100%); /* choose your max size */
+}
+
+/* More breathing room + bigger text */
+.code-snippet pre {
+  max-height: none;      /* removes the vertical cap */
+  padding: 20px 22px;
+}
+
+/* Bigger code */
+.code-snippet code {
+  font-size: 15px;
+  line-height: 1.7;
+}
+.code-snippet code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
