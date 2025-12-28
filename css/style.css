@@ -461,6 +461,19 @@ figure .img-wrapper {
   position: relative;
   overflow: hidden;
 }
+.portfolio-placeholder {
+  background: linear-gradient(135deg, #c74d30, #3c2c7e);
+  min-height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+.portfolio-placeholder .placeholder-content {
+  z-index: 1;
+}
 figure img {
   transform: scale3d(1, 1, 1);
   transition: transform 400ms;
