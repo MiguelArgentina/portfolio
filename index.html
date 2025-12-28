@@ -184,26 +184,50 @@ About Section Start
 ================================================== -->
 <section id="about">
     <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-md-6 col-sm-6">
-                <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+                <div class="block wow fadeInLeft about-panel" data-wow-delay=".3s" data-wow-duration="500ms">
                     <h2>
                         ABOUT ME
                     </h2>
                     <p>
-                        Hello, I'm fascinated with <img src="images/icons/ruby.png" style="width: 1rem;height: 1rem;object-fit: contain;"/> Ruby and, of course, <img src="images/icons/rails.png" style="width: 1.2rem;height: 1.2rem;object-fit: contain;"/> Rails for web development. I define myself as a Rubyist under construction, learning a bit every day.
-                        I love solving problems and making up ingenious solutions that make other people's lives easier
+                        Hello, I'm fascinated with <img src="images/icons/ruby.png" style="width: 1rem;height: 1rem;object-fit:contain;"/> Ruby and, of course, <img src="images/icons/rails.png" style="width: 1.2rem;height: 1.2rem;object-fit: contain;"/> Rails for web development. I define myself as a Rubyist under construction, learning a bit every day.
+                        I love solving problems and making up ingenious solutions that make other people's lives easier.
                     </p>
                     <p>
-                        I become a developer a few years ago, leaving behind many years of experience in another line of work,
-                        only to discover that this is the path I love and enjoy every day of my life
+                        I became a developer a few years ago, leaving behind many years of experience in another line of work,
+                        only to discover that this is the path I love and enjoy every day of my life.
                     </p>
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <div class="d-flex align-items-center mb-2">
+                                <span class="badge badge-pill badge-danger mr-2">Rubyist</span>
+                                <span class="text-muted small">Passionate about clean APIs &amp; fast feedback loops</span>
+                            </div>
+                            <p class="mb-0">I thrive when pairing, refactoring and crafting readable code that teams can grow with.</p>
+                        </div>
+                    </div>
                 </div>
 
             </div>
             <div class="col-md-6 col-sm-6">
-                <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-                    <img src="images/about/ror-christina-morillo.jpg" alt="ruby on rails code">
+                <div class="block wow fadeInRight about-visual" data-wow-delay=".3s" data-wow-duration="500ms">
+                    <img class="about-photo" src="images/about/ror-christina-morillo.jpg" alt="ruby on rails code">
+                    <div class="code-snippet">
+                        <div class="code-snippet__header">
+                            <span class="dot dot--red"></span>
+                            <span class="dot dot--amber"></span>
+                            <span class="dot dot--green"></span>
+                            <span class="code-snippet__title">rails console</span>
+                        </div>
+                        <pre><code>> rails g resource project name:string status:integer
+> bundle exec rspec
+...
+3 examples, 0 failures
+
+{ name: "Portfolio", status: :polishing }
+</code></pre>
+                    </div>
                 </div>
             </div>
         </div>
